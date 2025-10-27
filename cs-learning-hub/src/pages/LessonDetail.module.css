@@ -1,0 +1,214 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.level {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  margin: 0 0 0.75rem;
+  color: #f8fafc;
+  font-size: 2rem;
+}
+
+.summary {
+  margin: 0 0 1.25rem;
+  color: rgba(226, 232, 240, 0.85);
+  line-height: 1.7;
+  max-width: 48rem;
+}
+
+.objectives {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: rgba(241, 245, 249, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.objectives li {
+  line-height: 1.6;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.85rem;
+}
+
+.badge {
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.topics span {
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
+  color: #cbd5f5;
+  font-size: 0.85rem;
+}
+
+.backLink {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.backLink:hover {
+  color: #bfdbfe;
+}
+
+.markdown {
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: rgba(226, 232, 240, 0.9);
+  line-height: 1.75;
+}
+
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  color: #f8fafc;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h2:first-child,
+.markdown h3:first-child,
+.markdown h4:first-child {
+  margin-top: 0;
+}
+
+.markdown p {
+  margin: 1rem 0;
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.markdown li {
+  margin-left: 0.25rem;
+}
+
+.markdown code {
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+  font-size: 0.95rem;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+}
+
+.markdown pre {
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+  background: #0f172a;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  overflow-x: auto;
+}
+
+.markdown pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.markdown blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid rgba(96, 165, 250, 0.5);
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 0.75rem;
+  color: rgba(226, 232, 240, 0.9);
+}
+
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.markdown th {
+  background: rgba(148, 163, 184, 0.18);
+}
+
+.markdown a {
+  color: #93c5fd;
+  text-decoration: underline;
+  text-decoration-color: rgba(147, 197, 253, 0.4);
+}
+
+.markdown a:hover {
+  color: #bfdbfe;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .meta {
+    align-items: flex-start;
+  }
+
+  .topics {
+    justify-content: flex-start;
+  }
+
+  .markdown {
+    padding: 1.5rem;
+  }
+}

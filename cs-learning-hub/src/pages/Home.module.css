@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.hero {
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.3), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #f8fafc;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: rgba(226, 232, 240, 0.85);
+  max-width: 540px;
+  font-size: 1.05rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  padding: 0.75rem 1.35rem;
+  border-radius: 0.9rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ctaPrimary {
+  background: #2563eb;
+  color: #f8fafc;
+}
+
+.ctaSecondary {
+  background: rgba(37, 99, 235, 0.15);
+  color: #93c5fd;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.sectionHeader a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}

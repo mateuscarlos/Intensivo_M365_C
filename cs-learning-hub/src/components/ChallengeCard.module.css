@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: #111827;
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  gap: 1rem;
+  min-height: 220px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.badge {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  color: #0f172a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  margin: 0;
+  color: #f8fafc;
+}
+
+p {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.9);
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.topics span {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.75rem;
+  color: rgba(226, 232, 240, 0.85);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  background: #f87171;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  background: #ef4444;
+}
